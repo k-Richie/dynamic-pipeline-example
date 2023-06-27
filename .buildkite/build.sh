@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copy the Dockerfile and nginx.conf to the build context
+# Copy the Dockerfile and nginx.conf to the build conte
 cp docker/Dockerfile .
 cp docker/nginx.conf .
 
