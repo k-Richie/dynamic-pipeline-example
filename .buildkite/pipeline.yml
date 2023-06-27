@@ -1,6 +1,6 @@
 steps:
   - label: "Build Docker Image"
-    command: ".buildkite/build.sh"
+    command: "buildkite-agent pipeline upload .buildkite/build.sh"
 
 
 
