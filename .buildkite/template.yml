@@ -1,4 +1,4 @@
-  name: "Dynamic Pipeline Steps Example"
+  name: "Dynamic Pipeline Step Example"
   steps: 
     - type: "script",
       name: ":pipeline:",
