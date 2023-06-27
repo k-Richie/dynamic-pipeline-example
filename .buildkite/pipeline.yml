@@ -2,8 +2,6 @@ steps:
   - command: .buildkite/build.sh
     agents:
       docker: true
-    artifact_paths:
-      - docker/image.tar.gz
 
 
     
