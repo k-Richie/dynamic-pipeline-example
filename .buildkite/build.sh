@@ -5,7 +5,7 @@ set -eu
 echo "steps:"
 
 
-find dynamic-buildkite/* -type d | while read -r D; do
+find docker/* -type d | while read -r D; do
   echo "  - command: \"docker build -t my-image:$D $D\""
   echo "    label: \"$(basename "$D")\""
 done
