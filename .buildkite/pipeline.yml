@@ -1,4 +1,4 @@
 steps:
-  - command: .buildkite/build.sh
+  - command: .buildkite/build.sh | buildkite-agent pipeline upload
 
     
