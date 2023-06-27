@@ -1,14 +1,12 @@
 #!/bin/bash
 
-# Copy the Dockerfile and nginx.conf to the build conte
-cp docker/Dockerfile .
-cp docker/nginx.conf .
+set -eu
 
-# Build the Docker image
-docker build -t my-docker-image:latest .
+echo "steps:"
 
-# Save the Docker image as an artifact
-docker save my-docker-image:latest -o docker/image.tar.gz
+# Build Docker image
+echo "  - command: \"docker build -t my_nginx_image -f /docker/Dockerfile .\""
+echo "    label: \"Build NGINX Docker image\""
 
 
 
