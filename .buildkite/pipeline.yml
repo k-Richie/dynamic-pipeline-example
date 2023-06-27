@@ -1,4 +1,9 @@
 steps:
-  - command: .buildkite/build.sh | buildkite-agent pipeline upload
+  - command: .buildkite/build.sh
+    agents:
+      docker: true
+    artifact_paths:
+      - docker/image.tar.gz
+
 
     
